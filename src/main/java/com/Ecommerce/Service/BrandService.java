@@ -21,4 +21,8 @@ public class BrandService {
     public Brand addBrand(Brand brand) {
         return brandrepo.save(brand);
     }
+
+    public void deleteBrand(int brandid) {
+        brandrepo.deleteById(brandid);
+    }
 }
